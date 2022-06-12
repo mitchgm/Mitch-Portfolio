@@ -1,1 +1,158 @@
  /* test comment */
+ /* Variables */
+ :root {
+    --primary-color: black;
+    --secondary-color: darkorange;
+    
+}
+
+/* this section will style everything on the page, setting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing being set to border box makes sure the sections do not exceed the width of the page */
+    box-sizing: border-box;
+
+}
+
+/* this sets up the styles for everyhting withbin the body element of our html doc */
+body {
+    /* font-family picks the font for the text within body. Color picks the text color */
+    font-family: Helvetica, Arial, sans-serif ;
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+
+}
+
+body section {
+    margin: 0 5px 0 5px;
+    color: var(--secondary-color);
+
+}
+
+section h2 {
+    color: var(--primary-color);
+    text-align: right;
+    margin-top: 15px;
+}
+
+.section-title {
+    font-size: 50px;
+    color: var(--secondary-color);
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
+
+ header {
+    /*padding will provide spacing around the header. background-color will set the color fo the background of the header */
+    padding: 20px 35px;
+    background-color: var(--primary-color);
+    /* adding a flexbox */
+    display: flex;
+    justify-content: space-between;
+    /* this makes the content wrap when shrunken in screen size */
+    flex-wrap: wrap;
+    /* this keeps the header at the top of the page, even when scrolling */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+ 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+
+} 
+
+
+ /* this now creates styles for only the h1 element within the header element */
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+    margin: 0;
+    /*display: inline; replacing this with a flexbox*/
+    /* making this display inline allows the nav element to fit on the same line as the h1 element */
+
+    /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+    /* the first 0 means that there is no horizontal offset, so the shadow will start at the left side of the text. The second 0 indicates no vertical offset. The value 10px defines the radius, or size, of the blur. Finally, rgba 0,0,0,0.5 sets the color to black at half transparency */
+
+}
+
+/* this creates styles for only the anchor within the header */
+header a {
+    color: var(--secondary-color);
+    text-decoration: none;
+
+}
+
+header nav {
+    /* here were using the float element to move the nav section over to the right of the page */
+    /*float: right; replacing this with flexbox */
+    margin: 7px 0;
+
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align items center will vertically center the content */
+    align-items: center;
+    list-style: none;
+
+}
+
+/* this is no only styling the li elements with the ul, within the nav that is within the header */
+/* header nav ul li {
+   /* display: inline; */
+    /* this makes the li stay on the same line instead of being displayed like a traditional list */
+
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: bold;
+    /* vw stands for viewport width. this is saying that the fonts size should be roughly 1.55% of the window's overall width */
+    font-size: 1.55vw;
+    /* the first 0 means that there is no horizontal offset, so the shadow will start at the left side of the text. The second 0 indicates no vertical offset. The value 10px defines the radius, or size, of the blur. Finally, rgba 0,0,0,0.5 sets the color to black at half transparency */
+    /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+  }
+
+
+  .intro p {
+    line-height: 1.7;
+    color: var(--secondary-color);
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+
+
+  /* utility classes start */
+
+.text-left {
+    text-align: left;
+
+}
+
+.text-right {
+    text-align: right;
+
+}
+
+.flex-row {
+    display: flex;
+}
+
+/* utility classes end */
