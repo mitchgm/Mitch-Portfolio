@@ -137,6 +137,12 @@ header nav ul li a:hover {
 
 }
 
+.intro-img img {
+    height: 400px;
+    width: 300px;
+    margin: auto;
+    display: flex;
+}
 
 
   /* utility classes start */
