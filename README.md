@@ -1,4 +1,4 @@
-# Mitch-s-Portfolio
+# Mitch-Portfolio
 
 
 # Project Description 
