@@ -11,9 +11,9 @@ To view the project, clone the git repository using VS Code. this will allow you
 
 # Usage
 
-![screenshot of home page](image.png) 
+![screenshot of home page](assets/images/home.jpg) 
 
-![screenshot of the body](image.png)
+![screenshot of the body](assets/images/body.jpg)
 
 
 
