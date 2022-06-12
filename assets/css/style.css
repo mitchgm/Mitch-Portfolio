@@ -151,6 +151,76 @@ header nav ul li a:hover {
     padding-top: 10px;
 }
 
+.other-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding-bottom: 55px;
+    flex: 1;
+}
+
+.first-project img {
+    display: flex;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    margin-top: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.other-projects img {
+    display: flex;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    margin-top: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.projects img:hover {
+    opacity: 0.5;
+}
+
+.first-project span {
+    font-size: 25px;
+}
+
+.other-projects span {
+    font-size: 25px;
+}
+
+.first-project p {
+    line-height: 1.7;
+    color: var(--secondary-color);
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.other-projects p {
+    line-height: 1.7;
+    color: var(--secondary-color);
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
+
+.projects a {
+    color: var(--secondary-color);
+}
+
+.projects a:hover {
+    color: white;
+}
 
 .resume p {
     line-height: 1.7;
