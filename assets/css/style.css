@@ -172,8 +172,7 @@ header nav ul li a:hover {
 
 .other-projects img {
     display: flex;
-    width: 400px;
-    height: 200px;
+    width: 100%;
     margin: auto;
     margin-top: 25px;
     padding-top: 15px;
@@ -206,7 +205,7 @@ header nav ul li a:hover {
 .other-projects p {
     line-height: 1.7;
     color: var(--secondary-color);
-    width: 80%;
+    width: 30%;
     font-size: 20px;
     margin: 0 auto;
     text-align: center;
@@ -359,3 +358,57 @@ header nav ul li a:hover {
 }
 
 /* utility classes end */
+
+ /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+   /* this will be applied on any screen smaller than 980px */
+   @media screen and (max-width: 980px) {
+    .other-projects p {
+        width: 80%;
+    }
+    
+    header nav ul li a {
+        flex-wrap: wrap;
+        display: flex;
+        width: 100%;
+        font-size: 25px;
+        justify-content: center;
+    }
+   
+       
+      
+      
+    }
+    
+    /* MEDIA QUERY FOR TABLETS AND SMALLER */
+     /* this will be applied on any screen between 768px and 575px */
+    @media screen and (max-width: 768px) {
+        .other-projects p {
+            width: 80%;
+        }
+        
+        header nav ul li a {
+            flex-wrap: wrap;
+            display: flex;
+            width: 100%;
+            font-size: 25px;
+            justify-content: center;
+        }
+       
+  
+    }
+    
+    /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+    /* this will be applied on any screen smaller than 575px */
+    @media screen and (max-width: 575px) {
+  
+        .other-projects p {
+            width: 80%;
+        }
+        header nav ul li a {
+            flex-wrap: wrap;
+            display: flex;
+            width: 100%;
+            font-size: 25px;
+            justify-content: center;
+        }
+    }
