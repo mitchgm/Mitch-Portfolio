@@ -136,6 +136,7 @@ header nav ul li a:hover {
     margin: 0 auto;
     text-align: center;
     padding-top: 50px;
+    padding-bottom: 50px;
 
 }
 
@@ -145,6 +146,26 @@ header nav ul li a:hover {
     margin: auto;
     display: flex;
 }
+
+.resume p {
+    line-height: 1.7;
+    color: var(--secondary-color);
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.resume a {
+    color: var(--secondary-color);
+}
+
+.resume a:hover {
+    color: white;
+}
+
 
 .primary-border {
     border-bottom: 5px solid var(--secondary-color);
