@@ -41,6 +41,7 @@ section h2 {
     color: var(--secondary-color);
     text-align: center;
     padding-bottom: 25px;
+    
   }
 
 
@@ -134,6 +135,7 @@ header nav ul li a:hover {
     font-size: 20px;
     margin: 0 auto;
     text-align: center;
+    padding-top: 50px;
 
 }
 
@@ -143,6 +145,96 @@ header nav ul li a:hover {
     margin: auto;
     display: flex;
 }
+
+.primary-border {
+    border-bottom: 5px solid var(--secondary-color);
+    
+}
+
+
+.contact {
+    
+    background: var(--primary-color);
+
+}
+
+.contact h2 {
+    color: var(--secondary-color);
+
+}
+
+
+.contact-info div {
+    color: var(--secondary-color);
+    
+}
+
+.contact-info h3 {
+    color: var(--secondary-color);
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+
+.contact-info p, .contact-info address {
+    margin: 0px 0px;
+    line-height: 1.9;
+    font-size: 16px;
+    font-style: normal;
+
+}
+
+.contact-info a {
+    color: var(--secondary-color);
+    
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.contact-info > * {
+    flex: 1;
+    margin: 15px;
+  }
+
+  .contact-form input, .contact-form textarea {
+      border: 1px solid #024e76;
+      display: block;
+      padding: 7px 15px;
+      font-size: 16px;
+      color: #024e76;
+      width: 100%;
+      margin-bottom: 15px;
+      margin-top: 5px;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.75);
+  }
+
+  .contact-form input:focus, .contact-form textarea:focus {
+      background-color: rgba(255,255,255, 1);
+  }
+
+
+  .contact-form button {
+      width: 100%;
+      border: none;
+      background: var(--secondary-color);
+      color: var(--primary-color);
+      text-align: center;
+      padding: 15px 0px;
+      font-size: 16px;
+      border-radius: 10px;
+
+  }
+
+  .contact-form button:hover {
+      color: var(--secondary-color);
+      background: white;
+  }
+
 
 
   /* utility classes start */
